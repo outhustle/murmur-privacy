@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#FAF8F5" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#17150F" media="(prefers-color-scheme: dark)">
+  <title>Murmur — Privacy Policy</title>
+  <style>
+    :root {
+      --bg: #FAF8F5;
+      --ink: #1A1A1A;
+      --muted: #6B6862;
+      --accent: #C77D3C;
+      --rule: rgba(107, 104, 98, 0.18);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #17150F;
+        --ink: #F2EFEA;
+        --muted: #B0ABA3;
+        --accent: #D48B4A;
+        --rule: rgba(176, 171, 163, 0.18);
+      }
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font: 17px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", system-ui, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 56px 24px 96px;
+    }
+    header {
+      margin-bottom: 40px;
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 24px;
+    }
+    h1 {
+      font-size: 34px;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      margin: 0 0 8px;
+    }
+    h2 {
+      font-size: 20px;
+      font-weight: 600;
+      margin: 40px 0 12px;
+      letter-spacing: -0.01em;
+    }
+    p, ul { margin: 0 0 16px; }
+    ul { padding-left: 22px; }
+    li { margin-bottom: 6px; }
+    .meta {
+      color: var(--muted);
+      font-size: 14px;
+      margin: 0;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(199, 125, 60, 0.35);
+    }
+    a:hover { border-bottom-color: var(--accent); }
+    strong { font-weight: 600; }
+    .summary {
+      background: rgba(199, 125, 60, 0.08);
+      border: 1px solid rgba(199, 125, 60, 0.25);
+      border-radius: 14px;
+      padding: 18px 22px;
+      margin: 24px 0 32px;
+    }
+    footer {
+      margin-top: 56px;
+      padding-top: 24px;
+      border-top: 1px solid var(--rule);
+      color: var(--muted);
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Murmur for iOS · Last updated April 2026</p>
+  </header>
+
+  <div class="summary">
+    <strong>The short version.</strong> Murmur runs entirely on your iPhone. Your audio, your transcripts, and the fact that you use the app never leave your device. We don't have a server that sees your data. We don't collect analytics. We don't require an account.
+  </div>
+
+  <h2>1. What Murmur does</h2>
+  <p>Murmur records audio through your iPhone microphone and converts it into text using an AI speech-recognition model that runs locally on your device's Neural Engine. Recordings and transcripts are stored on your device.</p>
+
+  <h2>2. What Murmur does not do</h2>
+  <ul>
+    <li>We do not upload your audio recordings anywhere.</li>
+    <li>We do not upload your transcripts anywhere.</li>
+    <li>We do not collect analytics, telemetry, crash logs, or usage metrics.</li>
+    <li>We do not use third-party tracking or advertising SDKs.</li>
+    <li>We do not require an account, email address, or any personal information.</li>
+    <li>We do not share, sell, rent, or disclose any data to third parties — because we do not collect any in the first place.</li>
+  </ul>
+
+  <h2>3. The only network request Murmur makes</h2>
+  <p>The app ships with the English speech model bundled in. If you choose to transcribe in a non-English language, Murmur downloads a multilingual speech model one time from Hugging Face (<a href="https://huggingface.co/argmaxinc/whisperkit-coreml">huggingface.co/argmaxinc/whisperkit-coreml</a>). This is a one-time download of a model file, not a per-transcription request. No audio or transcript data is sent.</p>
+  <p>Hugging Face may log standard server request metadata (IP address, timestamp) for this download, governed by their own privacy policy. Murmur does not send any Murmur-specific identifiers with the request.</p>
+
+  <h2>4. Microphone access</h2>
+  <p>Murmur asks for microphone permission only to record audio you explicitly start recording. Audio is processed locally and never transmitted. You can revoke microphone access at any time in iOS Settings › Privacy &amp; Security › Microphone › Murmur.</p>
+
+  <h2>5. Notifications</h2>
+  <p>Murmur asks for notification permission the first time you start a transcription. It uses this only to post a local notification when your transcription finishes while the app is in the background. Notifications are generated on your device — no push server is involved.</p>
+
+  <h2>6. Live Activities</h2>
+  <p>While recording or transcribing, Murmur can display a Live Activity on your Lock Screen and in the Dynamic Island. This runs locally on your device. You can disable Live Activities globally in iOS Settings or turn on "Incognito Mode" inside Murmur to suppress them for individual sessions.</p>
+
+  <h2>7. Purchases</h2>
+  <p>Premium unlocks (Monthly, Yearly, and Lifetime) are processed by Apple through StoreKit. Apple, not Murmur, receives your payment information. Murmur receives only a local receipt indicating whether your account has an active entitlement. We do not see your Apple ID, credit card, or any personal details.</p>
+
+  <h2>8. Children</h2>
+  <p>Murmur is not directed at children under 13 and does not knowingly collect any data from anyone. Apple's parental controls apply as they would to any app.</p>
+
+  <h2>9. Data retention and deletion</h2>
+  <p>All recordings and transcripts are stored in the Murmur app's sandboxed storage on your iPhone. Deleting a transcript removes its text, and — if "Save Audio" was enabled — also removes the associated audio file. Deleting the Murmur app from your iPhone removes all of its data permanently. We cannot recover deleted data, because we never had a copy.</p>
+
+  <h2>10. Changes to this policy</h2>
+  <p>If the policy changes in any material way (for example, if a future version of Murmur adds a cloud-sync feature), we will update this page and the "Last updated" date at the top. Because Murmur has no way to contact you directly, it is your responsibility to check this page if you are concerned about changes.</p>
+
+  <h2>11. Contact</h2>
+  <p>Questions? Write to <a href="mailto:support@outhustle.com">support@outhustle.com</a>. We aim to reply within a few business days.</p>
+
+  <footer>
+    © 2026 Outhustle. Murmur is an independent product.
+  </footer>
+</main>
+</body>
+</html>
